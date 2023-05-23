@@ -29,7 +29,7 @@ To begin, make sure you have a Snowflake account. If you don't have one, sign up
 
 <img width="252" alt="image" src="https://github.com/vishalp9758/snowflake-streaming-api-python/assets/121073802/c692536b-f4c9-4685-9b02-45615f88f9a8">
 
-In my workflow I had uploaded a sample data set into a MySQL database hosted on Azure. Following is the schema and some sample records from my source table in MySQL database.
+In this data ingestion workflow, I had uploaded a sample data set into a MySQL database hosted on Azure. Following is the schema and some sample records from my source table in MySQL database.
  
 <img width="225" alt="image" src="https://github.com/vishalp9758/snowflake-streaming-api-python/assets/121073802/5c48c43d-062d-419a-9feb-1724af1ac9e0">
 
@@ -52,8 +52,9 @@ conda install  pyjnius, mysql-connector-python, phonenumbers
 ```
 
 #### Step 3: Update the “snowflake_env_login_creds.json” file with your snowflake platform credentials and source database credentials:
-You will need to generate private & public keys and register them in your snowflake account to security connect using the API. Please use the following link to generate and configure key pair authentication.
+You will need to generate a private & public key and register them in your snowflake account to securely connect using the API. Please use the following link to generate and configure key pair authentication with Snowflake and update the json config file with credentials for your environment.
 https://docs.snowflake.com/en/user-guide/key-pair-auth#configuring-key-pair-authentication
+
 
 #### Step 4: Configure path to JAR files required to use the Streaming API SDK:
 
@@ -82,3 +83,8 @@ Snowflake’s Streaming API supports both single row inserts and bulk inserts
 Connect to your Snowflake account using Snowpark and validate that all the records from the source MySQL table were successfully ingested into the destination table in Snowflake.
 
 <img width="468" alt="image" src="https://github.com/vishalp9758/snowflake-streaming-api-python/assets/121073802/5869c72f-bdc5-4cfe-bf79-3fa7b667e54e">
+
+#### Step 9: Transform the raw data and create gold tables using Snowpark:
+
+
+
