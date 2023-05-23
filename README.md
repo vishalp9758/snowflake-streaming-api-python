@@ -1,6 +1,6 @@
 # snowflake-streaming-api-python
 
-Introduction:
+### Introduction: 
 
 In today's data-driven world, real-time analytics and insights have become crucial for businesses. To
 facilitate this, organizations often need to stream data from various sources into a central data
