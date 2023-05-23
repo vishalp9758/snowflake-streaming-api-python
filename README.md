@@ -1,4 +1,4 @@
-# snowflake-streaming-api-python
+# snowflake-streaming-api using python
 
 ### Introduction: 
 
