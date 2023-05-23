@@ -20,7 +20,7 @@ dataframes.
 <img width="1267" alt="Screenshot 2023-05-22 at 7 22 24 PM" src="https://github.com/vishalp9758/snowflake-streaming-api-python/assets/121073802/b6f01ef9-8bbc-4862-aae9-fbb600b54d33">
 
 #### Prerequisites:
-Before diving into the streaming process, ensure that you have the following prerequisites in place:
+Before executing the notebook, ensure that you have the following prerequisites in place:
 1. A working MySQL database with the data you want to stream.
 2. A Snowflake account with the necessary privileges to create and manage objects.
 3. Anaconda Python version 3.8. 
