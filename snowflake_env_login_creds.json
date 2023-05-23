@@ -20,5 +20,5 @@
   "mysql_user": "ABCD",
   "mysql_pwd": "ABCD",
   "mysql_database": "snowpark_demodb"    
-}
+} 
   
