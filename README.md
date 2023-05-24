@@ -88,7 +88,7 @@ I then call this UDF in my Snowpark SQL command to transform the raw data into a
 
 <img width="976" alt="Screenshot 2023-05-23 at 9 20 30 PM" src="https://github.com/vishalp9758/snowflake-streaming-api-python/assets/121073802/43a5c116-14cb-487b-ad78-3b48fdcde4b7">
 
-The entire process, including extraction of 500K records from MySQL, loading to Snowflake, and transformation, took approximately 60 seconds to complete on my local laptop. However, please note that I was reading data from an Azure cloud database to my local machine and then ingesting it into a Snowflake database on Azure. If this code is executed inside a container on Azure, the total execution time might be in single-digit seconds.
+**The entire process, including extraction of 500K records from MySQL, loading to Snowflake, and transformation, took approximately 60 seconds to complete on my local laptop**. However, please note that I was reading data from an Azure cloud database to my local machine and then ingesting it into a Snowflake database on Azure. If this code is executed inside a container on Azure, the total execution time might be in single-digit seconds.
 
 ### Conclusion:
 Streaming data to Snowflake using the Snowflake's Streaming Ingest API SDK enables organizations to maintain real-time analytics and insights. By following the steps outlined in this article, you can now build near real-time ELT pipelines using Python and Snowflake's Streaming Ingest API.
