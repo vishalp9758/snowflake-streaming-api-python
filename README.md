@@ -1,6 +1,6 @@
 # snowflake-streaming-api using python
 
-### Introduction: 
+### Introduction:
 
 In today's data-driven world, real-time analytics and insights have become crucial for businesses. To facilitate this, organizations often need to stream data from various sources into a central data warehouse. However, building infrastructure and code for streaming pipelines can be very challenging due to the complex nature of streaming architectures, which often involves integrating with tools such as Apache Kafka, Flink, Spark, etc., as well as building the expertise to write high-quality code to integrate and manage these technologies.
 
