@@ -82,9 +82,15 @@ In my ingestion workflow, I am ingesting customer_id, email, phone number, and d
 
 To transform the phone column into a standard format, I created a Python UDF called "parse_phone_no" and uploaded this function to a stage area within my Snowflake database. The code for uploading the UDF has been commented and is saved within the main notebook.
 
+<img width="973" alt="Screenshot 2023-05-23 at 9 20 07 PM" src="https://github.com/vishalp9758/snowflake-streaming-api-python/assets/121073802/3943d11d-e2ed-49a0-a735-6596278a64b4">
+
 I then call this UDF in my Snowpark SQL command to transform the raw data into a final gold table, which can be used for downstream analytics.
+
+<img width="976" alt="Screenshot 2023-05-23 at 9 20 30 PM" src="https://github.com/vishalp9758/snowflake-streaming-api-python/assets/121073802/43a5c116-14cb-487b-ad78-3b48fdcde4b7">
 
 The entire process, including extraction, loading to Snowflake, and transformation, took approximately 60 seconds to complete on my local laptop. However, please note that I was reading data from an Azure cloud database to my local machine and then ingesting it into a Snowflake database on Azure. If this code is executed inside a container on Azure, the total execution time might be in single-digit seconds.
 
-#### Conclusion:
-Streaming data to Snowflake using the Snowflake Streaming Ingest API SDK enables organizations to maintain real-time analytics and insights. By following the steps outlined in this article, you can now build near-real-time ELT pipelines using Python and Snowflake's Streaming Ingest API.
+### Conclusion:
+Streaming data to Snowflake using the Snowflake's Streaming Ingest API SDK enables organizations to maintain real-time analytics and insights. By following the steps outlined in this article, you can now build near real-time ELT pipelines using Python and Snowflake's Streaming Ingest API.
+
+
